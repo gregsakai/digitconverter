@@ -3,10 +3,26 @@
 }
 
 .container {
+  margin-top: 50px;
+  height: 300px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
+}
+
+h1 {
+  font-size: 48px;
+  color: #3c3c3d;
+}
+  .digit {
+    color: black;
+  }
+
+#displayDiv {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 40px;
 }
 
 #mainInput {
@@ -15,13 +31,15 @@
   padding: 20px;
   text-align: center;
   border-radius: 10px;
+  border: none;
   font-size: 40px;
 }
 
 #convertButton {
   width: 15%;
   padding: 15px;
-  background-color: red;
+  background-color: #a5b6d1;
   border-radius: 10px;
   border: none;
+  font-size: 30px;
 }
