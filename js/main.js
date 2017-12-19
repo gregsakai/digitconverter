@@ -24,5 +24,10 @@ button.addEventListener("click", function(){
   var charCount = input.value.length;
   console.log(charCount);
 
-  display.innerHTML = input.value;
+  if(input.value<0){
+    display.innerHTML = "Please enter a value greater than 0!";
+  } else {
+      display.innerHTML = input.value;
+    }
+    
 });
