@@ -2,6 +2,10 @@
   font-family: 'Quicksand', sans-serif;
 }
 
+body {
+  background-color: #c8daf7;
+}
+
 .container {
   margin-top: 50px;
   height: 300px;
