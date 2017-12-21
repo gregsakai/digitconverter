@@ -22,14 +22,13 @@ var romanNums = {
 button.addEventListener("click", function(){
 
   var charCount = input.value.length;
-  var num = input.value;
-  var parseNum = JSON.parse(num);
-  console.log("Number of digits: "+charCount+", Number: "+parseNum);
+  var num = JSON.parse(input.value);
+  console.log("Number of digits: "+charCount+", Number: "+num);
 
   if(input.value<0){
     display.innerHTML = "Please enter a value greater than 0!";
   } else {
-      display.innerHTML = romanNums[parseNum];
+      display.innerHTML = romanNums[num];
       // for(i=0; i<charCount; i++){
       //   while(num >= standardNums[i]){
       //     display.innerHTML = romanNums[i];
