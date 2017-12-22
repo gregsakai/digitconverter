@@ -7,10 +7,12 @@ var display = document.getElementById("displayDiv");
 
 button.addEventListener("click", function(){
 
+  var num = input.value;
+
   if(input.value<0){
     display.innerHTML = "Please enter a value greater than or equal to zero!";
   } else {
-
+      display.innerHTML = Number(num).toString(2);
     }
 
 });
