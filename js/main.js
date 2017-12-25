@@ -46,7 +46,6 @@ function convertNum(ev){
 
 button.addEventListener("click", convertNum);
 
-var ev = null;
 input.addEventListener("keyup", function(ev){
   if(ev.keyCode == 13){
     convertNum();

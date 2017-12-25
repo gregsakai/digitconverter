@@ -5,8 +5,7 @@ var display = document.getElementById("displayDiv");
 
 // BINARY VERSION - MERGE LATER
 
-button.addEventListener("click", function(){
-
+function convertNum(){
   var num = input.value;
 
   if(input.value<0){
@@ -14,5 +13,14 @@ button.addEventListener("click", function(){
   } else {
       display.innerHTML = Number(num).toString(2);
     }
+}
 
+button.addEventListener("click", convertNum);
+
+input.addEventListener("keyup", function(ev){
+  if(ev.keyCode == 13){
+    convertNum();
+  } else {
+    console.log("Press enter to execute function");
+  }
 });
