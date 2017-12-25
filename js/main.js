@@ -19,7 +19,7 @@ var romanNums = {
   1:"I"
 }
 
-button.addEventListener("click", function(){
+function convertNum(ev){
 
   var charCount = input.value.length;
   var num = JSON.parse(input.value);
@@ -42,5 +42,15 @@ button.addEventListener("click", function(){
       //   }
       // }
     }
+}
 
+button.addEventListener("click", convertNum);
+
+var ev = null;
+input.addEventListener("keyup", function(ev){
+  if(ev.keyCode == 13){
+    convertNum();
+  } else {
+    console.log("Press enter to execute function");
+  }
 });
