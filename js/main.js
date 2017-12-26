@@ -26,7 +26,9 @@ function convertNum(ev){
   console.log("Number of digits: "+charCount+", Number: "+num);
 
   if(input.value < 0){
-    display.innerHTML = "Please enter a value greater than 0!";
+    display.innerHTML = "Please enter a positive value!";
+  } else if (input.value == 0){
+    display.innerHTML = "Nulla";
   } else {
       display.innerHTML = romanNums[num];
       // for(i=0; i<charCount; i++){
