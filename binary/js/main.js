@@ -7,12 +7,12 @@ var display = document.getElementById("displayDiv");
 
 function convertNum(){
   var num = input.value;
-
-  if(input.value<0){
-    display.innerHTML = "Please enter a value greater than or equal to zero!";
-  } else {
-      display.innerHTML = Number(num).toString(2);
-    }
+  display.innerHTML = Number(num).toString(2);
+  // if(input.value<0){
+  //   display.innerHTML = "Please enter a value greater than or equal to zero!";
+  // } else {
+  //     display.innerHTML = Number(num).toString(2);
+  //   }
 }
 
 button.addEventListener("click", convertNum);

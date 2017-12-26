@@ -25,7 +25,7 @@ function convertNum(ev){
   var num = JSON.parse(input.value);
   console.log("Number of digits: "+charCount+", Number: "+num);
 
-  if(input.value<0){
+  if(input.value < 0){
     display.innerHTML = "Please enter a value greater than 0!";
   } else {
       display.innerHTML = romanNums[num];
