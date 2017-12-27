@@ -2,60 +2,162 @@
   font-family: 'Quicksand', sans-serif;
 }
 
-body {
-  background-color: #c8daf7;
-}
+@media only screen and (min-width: 768px){
 
-.container {
-  margin-top: 40px;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-h1 {
-  font-size: 48px;
-  color: #3c3c3d;
-  text-align: center;
-}
-  .digit {
-    color: black;
+  body {
+    background-color: #c8daf7;
+  }
+  .container {
+    margin-top: 40px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 
-#displayDiv {
-  margin-top: 30px;
-  text-align: center;
-  font-size: 40px;
-}
-
-#mainInput {
-  width: 30%;
-  background-color: #c2c3c4;
-  padding: 20px;
-  text-align: center;
-  border-radius: 10px;
-  border: none;
-  font-size: 40px;
-}
-  input[type='number'] {
-    -moz-appearance:textfield;
+  h1 {
+    font-size: 48px;
+    color: #3c3c3d;
+    text-align: center;
   }
-  input[type='number']::-webkit-outer-spin-button,
-  input[type='number']::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+    .digit {
+      color: black;
+    }
+
+  #displayDiv {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 40px;
   }
 
-#convertButton {
-  width: 15%;
-  padding: 15px;
-  background-color: #a5b6d1;
-  border-radius: 10px;
-  border: none;
-  font-size: 30px;
+  #mainInput {
+    width: 30%;
+    background-color: #c2c3c4;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    font-size: 40px;
+  }
+
+  #convertButton {
+    padding: 15px;
+    background-color: #a5b6d1;
+    border-radius: 10px;
+    border: none;
+    font-size: 30px;
+  }
 }
+
+@media only screen and (max-width: 767px) and (min-width: 480px){
+
+  body {
+    background-color: #c8daf7;
+  }
+
+  .container {
+    margin-top: 30px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 36px;
+    color: #3c3c3d;
+    text-align: center;
+  }
+    .digit {
+      color: black;
+    }
+
+  #displayDiv {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  #mainInput {
+    width: 30%;
+    background-color: #c2c3c4;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    font-size: 30px;
+  }
+
+  #convertButton {
+    padding: 10px;
+    background-color: #a5b6d1;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 479px){
+
+  body {
+    background-color: #c8daf7;
+  }
+
+  .container {
+    margin-top: 20px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 30px;
+    color: #3c3c3d;
+    text-align: center;
+  }
+    .digit {
+      color: black;
+    }
+
+  #displayDiv {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  #mainInput {
+    width: 90%;
+    background-color: #c2c3c4;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    font-size: 24px;
+  }
+
+  #convertButton {
+    padding: 10px;
+    background-color: #a5b6d1;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+  }
+}
+
+input[type='number'] {
+  -moz-appearance:textfield;
+}
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
 #convertButton:hover {
   background-color: #7f8a9b;
 }

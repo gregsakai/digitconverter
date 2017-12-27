@@ -3,7 +3,7 @@ var input = document.getElementById("mainInput");
 var button = document.getElementById("convertButton");
 var display = document.getElementById("displayDiv");
 
-function convertNum(num) {
+function convertNum(){
   var num = input.value;
   var str = "";
   var romanNums = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"];
