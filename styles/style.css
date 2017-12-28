@@ -1,8 +1,13 @@
 * {
+  background-color: #c8daf7;
   font-family: 'Quicksand', sans-serif;
 }
 
-@media only screen and (min-width: 768px){
+/***************************************
+***** BUG: FIX BACKGROUND COLOUR *******
+****************************************/
+
+@media screen and (min-width: 768px){
 
   body {
     background-color: #c8daf7;
@@ -16,14 +21,20 @@
     align-items: center;
   }
 
-  h1 {
-    font-size: 48px;
+  #digitconverter {
+    font-size: 64px;
     color: #3c3c3d;
     text-align: center;
+    margin-bottom: 0;
   }
     .digit {
       color: black;
     }
+  #subhead {
+    font-size: 48px;
+    color: #3c3c3d;
+    margin-top: -40px;
+  }
 
   #displayDiv {
     margin-top: 30px;
@@ -64,14 +75,20 @@
     align-items: center;
   }
 
-  h1 {
-    font-size: 36px;
+  #digitconverter {
+    font-size: 42px;
     color: #3c3c3d;
     text-align: center;
+    margin-bottom: 0;
   }
     .digit {
       color: black;
     }
+  #subhead {
+    font-size: 36px;
+    color: #3c3c3d;
+    margin-top: -32px;
+  }
 
   #displayDiv {
     margin-top: 20px;
@@ -112,14 +129,20 @@
     align-items: center;
   }
 
-  h1 {
-    font-size: 30px;
+  #digitconverter {
+    font-size: 32px;
     color: #3c3c3d;
     text-align: center;
+    margin-bottom: 0;
   }
     .digit {
       color: black;
     }
+  #subhead {
+    font-size: 24px;
+    color: #3c3c3d;
+    margin-top: -30px;
+  }
 
   #displayDiv {
     margin-top: 15px;
@@ -129,7 +152,7 @@
 
   #mainInput {
     background-color: #c2c3c4;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
     border-radius: 5px;
     border: none;
