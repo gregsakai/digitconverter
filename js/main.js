@@ -15,7 +15,9 @@ function convertNum(){
       num -= standardNums[i];
     }
   }
+  display.style.width = num.length*20+"px";
   display.innerHTML = str;
+
 }
 
 button.addEventListener("click", convertNum);

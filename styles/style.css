@@ -1,5 +1,4 @@
 * {
-  background-color: #c8daf7;
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -13,6 +12,7 @@
     background-color: #c8daf7;
   }
   .container {
+    background-color: #c8daf7;
     margin-top: 40px;
     height: 400px;
     display: flex;
@@ -40,6 +40,9 @@
     margin-top: 30px;
     text-align: center;
     font-size: 40px;
+    background-color: #c2c3c4;
+    border-radius: 10px;
+    border: none;
   }
 
   #mainInput {
