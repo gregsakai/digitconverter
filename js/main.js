@@ -15,9 +15,7 @@ function convertNum(){
       num -= standardNums[i];
     }
   }
-  display.style.width = num.length*20+"px";
   display.innerHTML = str;
-
 }
 
 button.addEventListener("click", convertNum);
@@ -25,7 +23,5 @@ button.addEventListener("click", convertNum);
 input.addEventListener("keyup", function(ev){
   if(ev.keyCode == 13){
     convertNum();
-  } else {
-    console.log("Press enter to execute function");
   }
 });
