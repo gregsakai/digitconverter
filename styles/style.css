@@ -26,10 +26,20 @@
     .digit {
       color: black;
     }
-  #subhead {
-    font-size: 48px;
+
+  #romanNumerals {
+    text-decoration: none !important;
+    text-align: center;
+    font-size: 20px;
     color: #3c3c3d;
-    margin-top: -40px;
+    margin-top: -30px;
+  }
+  #binaryNumbers {
+    text-decoration: none !important;
+    text-align: center;
+    font-size: 20px;
+    color: #3c3c3d;
+    margin-top: -30px;
   }
 
   #displayDiv {
@@ -139,10 +149,19 @@
     .digit {
       color: black;
     }
-  #subhead {
-    font-size: 24px;
+
+  #romanNumerals {
+    text-align: center;
+    font-size: 20px;
+    color: green;
+    margin-top: -30px;
+  }
+  #binaryNumbers {
+    text-align: center;
+    font-size: 20px;
     color: #3c3c3d;
     margin-top: -30px;
+    text-decoration: none !important;
   }
 
   #displayDiv {
