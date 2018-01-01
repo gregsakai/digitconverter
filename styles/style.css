@@ -39,7 +39,7 @@
     text-decoration: none !important;
     text-align: center;
     font-size: 16px;
-    color: #3c3c3d;
+    color: black;
     margin-top: -30px;
   }
   #binaryNumbers {
@@ -54,11 +54,6 @@
     margin-top: 30px;
     text-align: center;
     font-size: 40px;
-    /*
-    background-color: #c2c3c4;
-    border-radius: 10px;
-    border: none;
-    */
   }
 
   #mainInput {
@@ -210,4 +205,8 @@ input[type='number']::-webkit-inner-spin-button {
 }
 #convertButton:active {
   background-color: #616b7a;
+}
+
+a:hover {
+  color: black;
 }
