@@ -2,60 +2,209 @@
   font-family: 'Quicksand', sans-serif;
 }
 
-body {
-  background-color: #c8daf7;
-}
+@media screen and (min-width: 768px){
 
-.container {
-  margin-top: 40px;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-h1 {
-  font-size: 48px;
-  color: #3c3c3d;
-  text-align: center;
-}
-  .digit {
-    color: black;
+  body {
+    background-color: #c8daf7;
+  }
+  .container {
+    background-color: #c8daf7;
+    margin-top: 40px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 
-#displayDiv {
-  margin-top: 30px;
-  text-align: center;
-  font-size: 40px;
-}
-
-#mainInput {
-  width: 30%;
-  background-color: #c2c3c4;
-  padding: 20px;
-  text-align: center;
-  border-radius: 10px;
-  border: none;
-  font-size: 40px;
-}
-  input[type='number'] {
-    -moz-appearance:textfield;
+  #digitconverter {
+    font-size: 64px;
+    color: #3c3c3d;
+    text-align: center;
+    margin-bottom: 0;
   }
-  input[type='number']::-webkit-outer-spin-button,
-  input[type='number']::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+    .digit {
+      color: black;
+    }
+
+  #menu {
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
 
-#convertButton {
-  width: 15%;
-  padding: 15px;
-  background-color: #a5b6d1;
-  border-radius: 10px;
-  border: none;
-  font-size: 30px;
+  #romanNumerals {
+    text-decoration: none !important;
+    text-align: center;
+    font-size: 16px;
+    color: #3c3c3d;
+    margin-top: -30px;
+  }
+  #binaryNumbers {
+    text-decoration: none !important;
+    text-align: center;
+    font-size: 16px;
+    color: #3c3c3d;
+    margin-top: -30px;
+  }
+
+  #displayDiv {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 40px;
+    /*
+    background-color: #c2c3c4;
+    border-radius: 10px;
+    border: none;
+    */
+  }
+
+  #mainInput {
+    background-color: #c2c3c4;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    font-size: 40px;
+  }
+
+  #convertButton {
+    padding: 15px;
+    background-color: #a5b6d1;
+    border-radius: 10px;
+    border: none;
+    font-size: 30px;
+  }
 }
+
+@media only screen and (max-width: 767px) and (min-width: 480px){
+
+  body {
+    background-color: #c8daf7;
+  }
+
+  .container {
+    margin-top: 30px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #digitconverter {
+    font-size: 42px;
+    color: #3c3c3d;
+    text-align: center;
+    margin-bottom: 0;
+  }
+    .digit {
+      color: black;
+    }
+  #subhead {
+    font-size: 36px;
+    color: #3c3c3d;
+    margin-top: -32px;
+  }
+
+  #displayDiv {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  #mainInput {
+    background-color: #c2c3c4;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    font-size: 30px;
+  }
+
+  #convertButton {
+    padding: 10px;
+    background-color: #a5b6d1;
+    border-radius: 5px;
+    border: none;
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 479px){
+
+  body {
+    background-color: #c8daf7;
+  }
+
+  .container {
+    margin-top: 50px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #digitconverter {
+    font-size: 32px;
+    color: #3c3c3d;
+    text-align: center;
+    margin-bottom: 0;
+  }
+    .digit {
+      color: black;
+    }
+
+  #romanNumerals {
+    text-align: center;
+    font-size: 20px;
+    color: green;
+    margin-top: -30px;
+  }
+  #binaryNumbers {
+    text-align: center;
+    font-size: 20px;
+    color: #3c3c3d;
+    margin-top: -30px;
+    text-decoration: none !important;
+  }
+
+  #displayDiv {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  #mainInput {
+    background-color: #c2c3c4;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    font-size: 24px;
+  }
+
+  #convertButton {
+    padding: 10px;
+    background-color: #a5b6d1;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+  }
+}
+
+input[type='number'] {
+  -moz-appearance:textfield;
+}
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 #convertButton:hover {
   background-color: #7f8a9b;
 }
