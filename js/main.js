@@ -4,6 +4,7 @@ var button = document.getElementById("convertButton");
 var display = document.getElementById("displayDiv");
 
 display.style.wordWrap = "break-word";
+
 function convertNum(){
   var num = input.value;
   var str = "";

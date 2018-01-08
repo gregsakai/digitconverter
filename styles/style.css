@@ -194,10 +194,6 @@
     margin-top: 15px;
     text-align: center;
     font-size: 24px;
-    max-width: 90%;
-    overflow-x: hidden;
-    word-wrap: break-word;
-    background-color: brown;
   }
 
   #mainInput {
