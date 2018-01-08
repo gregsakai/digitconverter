@@ -7,12 +7,12 @@ display.style.wordWrap = "break-word";
 
 function convertNum(){
   var num = input.value;
-  display.innerHTML = Number(num).toString(2);
-  // if(input.value<0){
-  //   display.innerHTML = "Please enter a value greater than or equal to zero!";
-  // } else {
-  //     display.innerHTML = Number(num).toString(2);
-  //   }
+  var str = Number(num).toString(2);
+    if(input.value>=0){
+        display.innerHTML = "0"+str;
+      } else {
+        display.innerHTML = "1"+Math.abs(str);
+      }
 }
 
 button.addEventListener("click", convertNum);
