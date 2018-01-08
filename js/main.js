@@ -3,6 +3,7 @@ var input = document.getElementById("mainInput");
 var button = document.getElementById("convertButton");
 var display = document.getElementById("displayDiv");
 
+display.style.wordWrap = "break-word";
 function convertNum(){
   var num = input.value;
   var str = "";
@@ -16,6 +17,7 @@ function convertNum(){
     }
   }
   display.innerHTML = str;
+  str.style.wordBreak = "breakAll";
 }
 
 button.addEventListener("click", convertNum);
