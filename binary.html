@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>Digit Converter</title>
-    <link href="styles/style.css" type="text/css" rel="stylesheet" />
-    <link href="styles/binary.css" type="text/css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  </head>
-  <body>
 
-    <div class="container">
-      <h1 id="digitconverter"><span class="digit">DIGIT</span>CONVERTER</h1><br/>
-      <div id="menu">
-        <a href="index.html" id="romanNumerals">
-          <h2>Roman Numerals</h2>
-        </a>
-        <a href="#" id="binaryNumbers">
-          <h2 class="current">Binary Numbers</h2>
-        </a>
-      </div>
-      <input type="number" placeholder="Enter your number" min=0 id="mainInput" />
-      <button id="convertButton">CONVERT</button>
+<head>
+  <meta charset="utf-8" />
+  <title>Digit Converter</title>
+  <link href="styles/style.css" type="text/css" rel="stylesheet" />
+  <link href="styles/binary.css" type="text/css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 id="digitconverter"><span class="digit">DIGIT</span>CONVERTER</h1><br/>
+    <div id="menu">
+      <a href="index.html" id="romanNumerals">
+        <h2>Roman Numerals</h2>
+      </a>
+      <a href="#" id="binaryNumbers">
+        <h2 class="current">Binary Numbers</h2>
+      </a>
     </div>
-    <div id="displayDiv"></div>
+    <input type="number" placeholder="Enter your number" min=0 id="mainInput" />
+    <button id="convertButton">CONVERT</button>
+  </div>
+  <div id="displayDiv"></div>
 
-    <script src="js/binary.js"></script>
-  </body>
+  <script src="js/binary.js"></script>
+</body>
+
 </html>

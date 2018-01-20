@@ -56,12 +56,7 @@ a:hover {
   justify-content: space-between;
 }
 
-#romanNumerals {
-  text-decoration: none;
-  text-align: center;
-}
-
-#binaryNumbers {
+.subheadings {
   text-decoration: none;
   text-align: center;
 }
